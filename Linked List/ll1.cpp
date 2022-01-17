@@ -34,6 +34,10 @@ void Display(struct Node *p)
         p = p->next;
     }
 }
+
+
+
+
 void RecursiveDisplay(struct Node *p)
 {
     if (p != NULL)
@@ -42,6 +46,20 @@ void RecursiveDisplay(struct Node *p)
         cout << p->data;
     }
 }
+
+int Count(struct Node *p)
+{
+    int count = 0;
+    while (p != NULL)
+    {
+        count++;
+        p = p->next;
+    }
+    return count;
+}
+
+
+
 int main()
 {
     struct Node *temp;
