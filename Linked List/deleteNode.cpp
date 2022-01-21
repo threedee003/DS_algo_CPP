@@ -52,6 +52,7 @@ int Delete(struct Node*p,int pos){
 		q = first;
 		first = first->next;
 		x = q->data;
+		delete q;
 		return x;
 	}
 	if(count(p) > pos){
