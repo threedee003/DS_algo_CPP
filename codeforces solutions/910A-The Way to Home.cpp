@@ -2,6 +2,8 @@
 using namespace std;
 
 
+//                  https://codeforces.com/contest/910/problem/A
+
 
 int main(){
 	int n,d;
