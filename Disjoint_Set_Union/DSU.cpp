@@ -36,5 +36,14 @@ void Union(int a,int b){
 
 
 int main(){
-	
+	int n,k;         //n = 10,
+	cin >> n >> k;
+	for(int i = 1; i <= n; ++i) make(i);
+	while(k--){
+		int u,v; cin >> u >> v;
+		Union(u,v);
+	}
+	int connected_components = 0;
+	for(int i = 1; i <= n; ++i) if(find(i) == i) connected_components++;
+	cout << connected_components;
 }
