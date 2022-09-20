@@ -6,7 +6,7 @@ using namespace std;
 const int inf = 1e9+7;
 const int N = 1e3+9;
 
-
+//                                            https://codeforces.com/problemset/problem/467/B
 
 int pop_count(int x){
 	int ans = 0;
